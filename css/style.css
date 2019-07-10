@@ -2599,16 +2599,20 @@ button:active {
 .screenshot-container #previous {
   left: -300px;
 }
-.screenshot-container #previous:before {
+/* .screenshot-container #previous:before {
   content: "\e627";
   font-family: "FontAwesome";
-}
+} */
 .screenshot-container #next {
   right: -300px;
 }
-.screenshot-container #next:before {
+/* .screenshot-container #next:before {
   content: "\e628";
   font-family: "FontAwesome";
+} */
+
+#plane_icon {
+  font-family: "FontAwesome"; !Important
 }
 
 .screenshot-mock {
