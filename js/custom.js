@@ -412,7 +412,7 @@ jQuery(document).ready(function ($) {
     -----------------------------------*/
     $(".cps-subscription").ajaxChimp({
         callback: mailchimpResponse,
-        url: "http://codepassenger.us10.list-manage.com/subscribe/post?u=6b2e008d85f125cf2eb2b40e9&id=6083876991" // Replace your mailchimp post url inside double quote "".  
+        url: "" // HERE, Replace your mailchimp post url inside double quote "".  
     });
 
     function mailchimpResponse(resp) {
