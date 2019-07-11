@@ -603,7 +603,7 @@
                                 </div>
                                 <div class="col-md-8 col-sm-6">
                                     <textarea id="message" name="messge" placeholder="Your Message Here"></textarea>
-                                    <button type="submit">Send</button>
+                                    <button name="submit" type="submit">Send</button>
                                 </div>
                             </div>
                             <p class="input-success">Your message sent. Thanks for contacting.</p>
@@ -628,7 +628,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <form id='subscription' class='cps-subscription' method='post'><input type='hidden' name='form-name' value='subscription' />
+                        <form id='subscription' class='cps-subscription' method='post' action='/sendmail.php'><input type='hidden' name='form-name' value='subscription' />
                             <input type="email" name="email" placeholder="Enter your email here">
                             <button type="submit"><i class="fa-paper-plane" id="plane_icon"></i></button>
                             <p class="newsletter-success"></p>
