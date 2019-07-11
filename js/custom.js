@@ -392,7 +392,7 @@ jQuery(document).ready(function ($) {
         if (isValidEmail(data['email']) && (data['message'].length > 1) && (data['name'].length > 1) && (data['phone'].length > 1)) {
             $.ajax({
                 type: "POST",
-                url: "./js/sendmail.php",
+                url: "./sendmail.php",
                 data: data,
                 success: function () {
                     $('#contactForm .input-success').delay(500).fadeIn(1000);
