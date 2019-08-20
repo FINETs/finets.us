@@ -594,7 +594,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <form name="contact-form" id='contactForm' class='cps-contact-form' method='POST' data-netlify="true" action="https://finets.netlify.com/sendmail.php">
+                        <form name="contact-form" id='contactForm' class='cps-contact-form' method='POST' data-netlify="true">
                             <input type='hidden' name='form-name' value='contactForm' />
                             <div class="row">
                                 <div class="col-md-4 col-sm-6">
@@ -629,7 +629,8 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <form id='subscription' class='cps-subscription' method='post' action='/sendmail.php'><input type='hidden' name='form-name' value='subscription' />
+                        <form id='subscription' class='cps-subscription' method='post'>
+                            <input type='hidden' name='form-name' value='subscription' />
                             <input type="email" name="email" placeholder="Enter your email here">
                             <button type="submit"><i class="fa-paper-plane" id="plane_icon"></i></button>
                             <p class="newsletter-success"></p>
