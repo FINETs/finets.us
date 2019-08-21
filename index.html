@@ -595,7 +595,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         <form name="contact-form" id='contactForm' class='cps-contact-form' method='POST' data-netlify="true">
-                            <input type='hidden' name='form-name' value='contactForm' />
+                            <input type='hidden' name="formHiddenField" value="contact-form" />
                             <div class="row">
                                 <div class="col-md-4 col-sm-6">
                                     <input id="name" type="text" name="name" placeholder="Your Name">
@@ -603,7 +603,7 @@
                                     <input id="phone" type="tel" name="phone" placeholder="Phone">
                                 </div>
                                 <div class="col-md-8 col-sm-6">
-                                    <textarea name="messge" id="message" placeholder="Your Message Here"></textarea>
+                                    <textarea name="message" id="message" placeholder="Your Message Here"></textarea>
                                     <button type="submit">Send</button>
                                 </div>
                             </div>
@@ -629,8 +629,8 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <form id='subscription' class='cps-subscription' method='post'>
-                            <input type='hidden' name='form-name' value='subscription' />
+                        <form name="subscription" id='subscriptionID' class='cps-subscription' method='post' data-netlify="true">
+                            <input type='hidden' name='form-name' value="subscription" />
                             <input type="email" name="email" placeholder="Enter your email here">
                             <button type="submit"><i class="fa-paper-plane" id="plane_icon"></i></button>
                             <p class="newsletter-success"></p>
