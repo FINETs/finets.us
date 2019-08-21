@@ -411,20 +411,20 @@ jQuery(document).ready(function ($) {
     /*-----------------------------------
     Subscription
     -----------------------------------*/
-    $(".cps-subscription").ajaxChimp({
-        callback: mailchimpResponse,
-        url: "" // HERE, Replace your mailchimp post url inside double quote "".  
-    });
+    // $(".cps-subscription").ajaxChimp({
+    //     callback: mailchimpResponse,
+    //     url: "" // HERE, Replace your mailchimp post url inside double quote "".  
+    // });
 
-    function mailchimpResponse(resp) {
-        if (resp.result === 'success') {
+    // function mailchimpResponse(resp) {
+    //     if (resp.result === 'success') {
 
-            $('.newsletter-success').html(resp.msg).fadeIn().delay(3000).fadeOut();
+    //         $('.newsletter-success').html(resp.msg).fadeIn().delay(3000).fadeOut();
 
-        } else if (resp.result === 'error') {
-            $('.newsletter-error').html(resp.msg).fadeIn().delay(3000).fadeOut();
-        }
-    }
+    //     } else if (resp.result === 'error') {
+    //         $('.newsletter-error').html(resp.msg).fadeIn().delay(3000).fadeOut();
+    //     }
+    // }
 
 
     /*-------------------------------------
